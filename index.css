@@ -1,58 +1,59 @@
-:root{
-    --c-body-font-clr: #000;
-    --c-primary-focus-color: #03a9f5;
-    --c-primary-anchor-clr: #03a9f5;
-    --c-primary-btn-bg: #f0483e;
-    --c-white: #fff;
-    --c-zsh-place-fontcolor: #878787;
-    --c-zf-hover: #f6f8fb;
-    --c-highlight:#448FF7; 
-    --c-primary-color:#272F43;
-    --c-top-bar-color:#262F45;
-    --c-cta:#1AB394;
-    --c-cta-padding:12px 20px;
-    --c-dark-text:#333333;
-    --c-text-color:#272F43;
-    --c-b-radius: 3px;
-    --c-fontsize14 : 14px;
-    --c-fontsize16 : 16px;
-    --c-fontsize12 : 12px;
-    --c-gray :#555555;
-    --c-body-bg:#F5F6F8;
-    --c-discard:#A8A8A8;
-    --c-gray-100: #ECECEC;
-    --c-gray-60: #9d9d9d;
-    --c-gray-50: #f5f6f8;
-    --c-gray-10: #bbbbbb;
-    --c-gray-200: #d6d4d4;
-    --c-light-gray:#F4F4F4;
-    --c-dark-blue-gray:#464D5D;
-    --c-charcoal-blue: #464D5D;
-    --c-sonic-silver:#7C7C7C;
-    --c-light-black: rgba(0,0,0,0.7);
-    --c-silver-gray:#D3D3D3;
-    --c-corl:#ff6347;
-    --c-off-gray:#FAFAFA;
-    --c-mist-slate:#DDDDDD80;
-    --c-dark-charcoal: #333;
-    --c-soft-silver:#E3E3E3;
-    --c-granite-gray:#848484;
-    --c-red: red;
-    --c-teal: #20A58A;
-    --c-celadon-green:#52AD93;
-    --c-dodger-blue:#2680EB;
-    --c-alice-blue: #edf4fd;
-    --c-border-gray: #ddd;
-    --c-pale-gray:#eee;
-    --c-vibrant-red:#EF4C4C;
-    --c-aliceBlue: #ECF4FE;
-    --c-mintcream:#EEF6F5;
-    --c-drak-sea-green: #88bcaa;
-    --c-keppel: #36bc9e;
+:root {
+  --c-body-font-clr: #000;
+  --c-primary-focus-color: #03a9f5;
+  --c-primary-anchor-clr: #03a9f5;
+  --c-primary-btn-bg: #f0483e;
+  --c-white: #fff;
+  --c-zsh-place-fontcolor: #878787;
+  --c-zf-hover: #f6f8fb;
+  --c-highlight: #448ff7;
+  --c-primary-color: #272f43;
+  --c-top-bar-color: #262f45;
+  --c-cta: #1ab394;
+  --c-cta-padding: 12px 20px;
+  --c-dark-text: #333333;
+  --c-text-color: #272f43;
+  --c-b-radius: 3px;
+  --c-fontsize14: 14px;
+  --c-fontsize16: 16px;
+  --c-fontsize12: 12px;
+  --c-gray: #555555;
+  --c-body-bg: #f5f6f8;
+  --c-discard: #a8a8a8;
+  --c-gray-100: #ececec;
+  --c-gray-60: #9d9d9d;
+  --c-gray-50: #f5f6f8;
+  --c-gray-10: #bbbbbb;
+  --c-gray-200: #d6d4d4;
+  --c-light-gray: #f4f4f4;
+  --c-dark-blue-gray: #464d5d;
+  --c-charcoal-blue: #464d5d;
+  --c-sonic-silver: #7c7c7c;
+  --c-light-black: rgba(0, 0, 0, 0.7);
+  --c-silver-gray: #d3d3d3;
+  --c-corl: #ff6347;
+  --c-off-gray: #fafafa;
+  --c-mist-slate: #dddddd80;
+  --c-dark-charcoal: #333;
+  --c-soft-silver: #e3e3e3;
+  --c-granite-gray: #848484;
+  --c-red: red;
+  --c-teal: #20a58a;
+  --c-celadon-green: #52ad93;
+  --c-dodger-blue: #2680eb;
+  --c-alice-blue: #edf4fd;
+  --c-border-gray: #ddd;
+  --c-pale-gray: #eee;
+  --c-vibrant-red: #ef4c4c;
+  --c-aliceBlue: #ecf4fe;
+  --c-mintcream: #eef6f5;
+  --c-drak-sea-green: #88bcaa;
+  --c-keppel: #36bc9e;
 }
 
-ul li { list-style: none }
- 
+ul li {
+  list-style: none;
+}
 
 .tree {
   display: flex;
@@ -60,26 +61,24 @@ ul li { list-style: none }
   gap: 18px;
   margin-left: 46px;
   position: relative;
- }
+}
 
 .tree .parent {
   position: relative;
   padding-block: 4px;
 }
 
-.tree .parent::before, 
+.tree .parent::before,
 .tree .parent::after {
-  content: '';
+  content: "";
   position: absolute;
-  
 }
-
 
 .tree .parent::before {
   width: 18px;
-  top: 13px;
+  top: 15px;
   left: -18px;
-  border-bottom: 1px solid var(--c-gray-200);
+  border-bottom: 3px solid yellowgreen;
 }
 
 .tree .parent::after {
@@ -88,10 +87,9 @@ ul li { list-style: none }
   top: 0;
   left: -27.5px;
   height: 39px;
-  border-left: 1px solid var(--c-gray-200);
+  border-left: 3px solid yellowgreen;
   bottom: 0;
 }
-
 
 .tree .parent:last-child::after {
   height: 5px;
@@ -105,7 +103,7 @@ ul li { list-style: none }
 
 .tree details[open] > .parent::before,
 .tree details[open] > .nested-item::after {
-  border-left-color: var(--c-drak-sea-green);
+  border-left-color: yellowgreen;
 }
 
 .tree .parent.parent:last-child::after {
@@ -125,42 +123,36 @@ ul li { list-style: none }
   display: block;
   position: relative;
   cursor: pointer;
+  background: lightblue;
+  width: fit-content;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 1rem;
+  font-size: .9rem;
 }
 
 .tree summary::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
-  left: -37px;
-  width: 18px;
-  height: 18px;
+  left: -35px;
+  width: 14px;
+  height: 14px;
   text-align: center;
   color: var(--c-gray-200);
-  border: 1px solid var(--c-gray-200);
+  border: 3px solid yellowgreen;
   border-radius: 50%;
   background-color: var(--c-white);
   z-index: 10;
 }
 
-
-.tree::after {
-  content: '';
-  position: absolute;
-  top: -18px;
-  left: -27px;
-  width: 1px;
-  height: 22px;
-  background-color: var(--c-gray-200);
-  
-}
-
-
 .tree details[open] > summary::before {
-  content: '';
-  border: 1px solid var(--c-drak-sea-green);
+  content: "";
+  border: 3px solid yellowgreen;
   color: var(--c-drak-sea-green);
 }
-
 
 .tree details[open] > .tree.parent::after {
   display: block;
@@ -168,10 +160,9 @@ ul li { list-style: none }
   top: 0;
   left: -27.5px;
   height: 39px;
-  border-left: 1px solid var(--c-drak-sea-green); /* Change border color here */
+  border-left: 3px solid yellowgreen;
   bottom: 0;
 }
-
 
 .tree .nested-list {
   padding: 0 0 0 45px;
@@ -183,19 +174,18 @@ ul li { list-style: none }
   margin-top: 0;
 }
 
-.tree .nested-item::before, 
+.tree .nested-item::before,
 .tree .nested-item::after {
-  content: '';
+  content: "";
   position: absolute;
   left: -17px;
 }
-
 
 .tree .nested-item::before {
   width: 28px;
   top: 18px;
   left: -27px;
-  border-bottom: 1px solid var(--c-gray-200);
+  border-bottom: 3px solid yellowgreen;
 }
 
 .tree .nested-item::after {
@@ -205,13 +195,13 @@ ul li { list-style: none }
   left: -27px;
   height: 45px;
   height: 100%;
-  border-left: 1px solid var(--c-gray-200);
+  border-left: 3px solid yellowgreen;
   bottom: 0;
 }
 
 .tree .nested-item:last-child::after {
   top: 0px;
-  height: 19px ;
+  height: 19px;
   bottom: auto;
 }
 
@@ -221,11 +211,7 @@ ul li { list-style: none }
   padding-inline: 3px;
   color: #929292;
   margin-right: 10px;
-  border: 1px solid var(--c-gray-100);
-}
-
-.tree > .parent:last-child {
-  padding-bottom: 0;
+  border: 3px solid yellowgreen;
 }
 
 .tree-title {
@@ -235,5 +221,4 @@ ul li { list-style: none }
 .tree-title:hover {
   color: var(--c-keppel);
   cursor: pointer;
-  
 }
