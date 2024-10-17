@@ -79,7 +79,7 @@ ul li { list-style: none }
   width: 18px;
   top: 13px;
   left: -18px;
-  border-bottom: 1px dashed var(--c-gray-200);
+  border-bottom: 1px solid var(--c-gray-200);
 }
 
 .tree .parent::after {
@@ -128,7 +128,7 @@ ul li { list-style: none }
 }
 
 .tree summary::before {
-  content: '+';
+  content: '';
   position: absolute;
   top: 0;
   left: -37px;
@@ -156,7 +156,7 @@ ul li { list-style: none }
 
 
 .tree details[open] > summary::before {
-  content: '-';
+  content: '';
   border: 1px solid var(--c-drak-sea-green);
   color: var(--c-drak-sea-green);
 }
@@ -195,7 +195,7 @@ ul li { list-style: none }
   width: 28px;
   top: 18px;
   left: -27px;
-  border-bottom: 1px dashed var(--c-gray-200);
+  border-bottom: 1px solid var(--c-gray-200);
 }
 
 .tree .nested-item::after {
